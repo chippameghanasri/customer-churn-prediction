@@ -1,35 +1,28 @@
-# Project Overview
-This project predicts whether a bank customer will stay or leave (churn) using Machine Learning.
-A Random Forest Classifier is trained on customer data and deployed using a Streamlit web app for real-time predictions.
+# Customer Churn Prediction
 
-# Problem Statement
-Banks lose revenue when customers leave (churn).
-The goal is to build a model that can identify customers likely to churn so that retention strategies can be applied.
+Machine Learning project that predicts whether a bank customer is likely to churn.
 
-# Machine Learning Approach
-Data preprocessing and cleaning
-Encoding categorical variables
-Feature selection
-Model training using Random Forest Classifier
-Model evaluation using accuracy, precision, recall, and F1-score
+## Features
+- Customer churn prediction
+- Random Forest Classifier
+- Streamlit Web App
+- Interactive user interface
 
-# Model Performance
-Accuracy: ~86%
-Precision: ~0.76
-Recall: ~0.47
-F1 Score: ~0.58
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
 
-# Tech Stack
-Python
-Pandas, NumPy
-Scikit-learn
-Streamlit
-Joblib
+## Model Performance
+- Accuracy: 86.3%
+- Precision: 75.9%
+- Recall: 47.9%
+- F1 Score: 58.7%
 
-# Project Structure
-Customer-Churn-Prediction/
-│
-├── app.py              # Streamlit web app
-├── model.pkl           # Trained ML model
-├── requirements.txt    # Dependencies
-├── README.md           # Project documentation
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
