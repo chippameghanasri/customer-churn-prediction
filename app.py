@@ -3,6 +3,7 @@ import joblib
 import pandas as pd
 
 model = joblib.load("model.pkl")
+st.write("Model Features:", model.feature_names_in_)
 
 st.title("Customer Churn Prediction")
 
@@ -52,6 +53,7 @@ if st.button("Predict"):
         'Geography_Spain'
 
     ])
+    st.write("Input Features:", data.columns.tolist())
 
     prediction = model.predict(data)
 
